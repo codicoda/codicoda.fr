@@ -1,0 +1,44 @@
+RewriteEngine On
+
+# Ne pas réécrire si fichier ou dossier réel
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirige les URLs sans .php vers les bons fichiers
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/([^/]+)$ $1/$2.php [L]
+
+# Supprime l'affichage du .php dans l'URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.+)\.php\sHTTP
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# Désactiver l'indexation
+Options -Indexes
+
+# Bloquer les fichiers sensibles
+<FilesMatch "\.(ini|log|sh|bak|inc|sql|config\.php|\.env|\.git|\.ht|composer\.json|composer\.lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Bloquer les fichiers cachés (commençant par .)
+<Files ~ "^\.">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Headers de sécurité
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Limiter les méthodes HTTP
+<LimitExcept GET POST>
+    Deny from all
+</LimitExcept>
