@@ -1,46 +1,35 @@
 RewriteEngine On
 
-# Redirige les URLs avec /pages/ vers une version sans /pages/
-RewriteCond %{THE_REQUEST} \s/pages/([a-zA-Z0-9_-]+)\s [NC]
-RewriteRule ^pages/([a-zA-Z0-9_-]+)$ /$1 [R=301,L]
+# --- Rediriger directement les URLs contenant /pages/ vers la version propre ---
+RewriteCond %{THE_REQUEST} \s/pages/([a-zA-Z0-9_-]+)(?:\.php)?\s [NC]
+RewriteRule ^pages/([a-zA-Z0-9_-]+)(?:\.php)?$ /$1 [R=301,L]
 
-# Sert les fichiers dans /pages/ quand /contact est appelé
+# --- Réécrire les URLs propres vers /pages/nom.php (sans extension) ---
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}/pages/$1.php -f
 RewriteRule ^([a-zA-Z0-9_-]+)$ pages/$1.php [L]
 
-# Ne pas réécrire si fichier ou dossier réel
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
-# Redirige les URLs sans .php vers les bons fichiers
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^/]+)/?$ $1.php [L]
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)/([^/]+)/?$ $1/$2.php [L]
-
-# Supprime l'affichage du .php dans l'URL
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.+)\.php\sHTTP
+# --- Supprimer .php de l'URL propre ---
+RewriteCond %{THE_REQUEST} \s/([^\s]+)\.php[?\s] [NC]
 RewriteRule ^(.+)\.php$ /$1 [R=301,L]
 
-# Désactiver l'indexation
+# --- Désactiver l'indexation des dossiers ---
 Options -Indexes
 
-# Bloquer les fichiers sensibles
+# --- Bloquer l'accès aux fichiers sensibles ---
 <FilesMatch "\.(ini|log|sh|bak|inc|sql|config\.php|\.env|\.git|\.ht|composer\.json|composer\.lock)$">
     Order allow,deny
     Deny from all
 </FilesMatch>
 
-# Bloquer les fichiers cachés (commençant par .)
+# --- Bloquer les fichiers cachés (commençant par .) ---
 <Files ~ "^\.">
     Order allow,deny
     Deny from all
 </Files>
 
-# Headers de sécurité
+# --- Headers de sécurité ---
 <IfModule mod_headers.c>
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
@@ -48,7 +37,7 @@ Options -Indexes
     Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# Limiter les méthodes HTTP
+# --- Limiter les méthodes HTTP ---
 <LimitExcept GET POST>
     Deny from all
 </LimitExcept>
