@@ -1,6 +1,7 @@
 <?php
 session_start();
-$to = "contact@codicoda.fr";
+$secret = $_ENV('TURNSTILE_SECRET') ?? $_SERVER['TURNSTILE_SECRET'] ?? getenv('TURNSTILE_SECRET') ?? null;
+$to = $_ENV('CONTACT_EMAIL') ?? $_SERVER['CONTACT_EMAIL'] ?? getenv('CONTACT_EMAIL') ?? null;
 
 if (empty($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'], 'codicoda.fr') === false) {
     die("Accès non autorisé.");
@@ -57,7 +58,6 @@ curl_setopt($ch, CURLOPT_URL, "https://challenges.cloudflare.com/turnstile/v0/si
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
-    'secret' => '0x4AAAAAABafKgDrVaoU5RErZiHtVZB5jtE', 
     'response' => $token,
     'remoteip' => $_SERVER['REMOTE_ADDR']
 ]));
