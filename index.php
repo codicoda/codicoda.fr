@@ -17,9 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
             <link rel="stylesheet" href="/assets/css/style.min.css">
-            <script src="https://kit.fontawesome.com/d086639e0f.js" crossorigin="anonymous"></script>            <meta charset="UTF-8">
+            <script src="https://kit.fontawesome.com/d086639e0f.js" crossorigin="anonymous"></script>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
             <title>Création de site internet professionnel | Refonte & maintenance web sur mesure | Codicoda</title>
             <meta name="description" content="Codicoda conçoit des sites internet professionnels sur mesure : création, refonte, maintenance, SEO, hébergement et déploiement. Un accompagnement complet, de A à Z.">
@@ -643,7 +642,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                                     <label for="message" class="block text-sm text-gray-400 mb-1">Message</label>
                                                     <textarea id="message" name="message" rows="4" class="w-full bg-gray-800/50 border border-gray-700 focus:border-cyan-500 rounded-lg py-2 px-3 text-white focus:outline-none focus:ring-1 focus:ring-cyan-500/50 transition-colors resize-none"></textarea>
                                                 </div>
-                                                <div class="cf-turnstile" data-sitekey="0x4AAAAAABafKuhf-vdXQkNh" data-theme="dark" id="turnstile-widget"></div>
+                                                <div id="turnstile-container" style="display:none; margin-bottom: 1rem;"></div>
                                                 <div class="relative group">
                                                     <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
                                                     <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300">
