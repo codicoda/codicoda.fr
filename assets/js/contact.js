@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             script.async = true;
             window.onTurnstileLoad = () => {
                 turnstile.render('#turnstile-container', {
-                    sitekey: '0x4AAAAAABafKuhf-vdXQkNh',
+                    sitekey: window.TURNSTILE_KEY,
                     theme: 'dark',
                     callback: function (responseToken) {
                         token = responseToken;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formData = new FormData(form);
         formData.append('cf-turnstile-response', token);
 
-        fetch('incoming/send', {
+        fetch('/send', {
             method: 'POST',
             body: formData
         })
