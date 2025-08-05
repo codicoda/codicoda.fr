@@ -2,7 +2,7 @@
 session_start();
 $isLocal = ($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_NAME'] === '127.0.0.1');
 
-$turnstile_site_key = $isLocal
+$turnstile_secret_key = $isLocal
     ? ($_ENV['TURNSTILE_SECRET_KEY_DEV'] 
         ?? $_SERVER['TURNSTILE_SECRET_KEY_DEV'] 
         ?? getenv('TURNSTILE_SECRET_KEY_DEV') 
