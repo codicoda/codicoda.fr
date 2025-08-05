@@ -41,7 +41,7 @@
       <div>
         <h3 class="text-xl text-cyan-400 font-semibold mb-2">5. Données personnelles</h3>
         <p>
-          Les données recueillies via les formulaires sont traitées dans le respect de la réglementation en vigueur (RGPD). Aucune donnée personnelle n’est cédée à des tiers. Voir la <a href="/pages/privacy-policy" class="underline text-cyan-400 hover:text-cyan-300">politique de confidentialité</a>.
+          Les données recueillies via les formulaires sont traitées dans le respect de la réglementation en vigueur (RGPD). Aucune donnée personnelle n’est cédée à des tiers. Voir la <a href="/privacy-policy" class="underline text-cyan-400 hover:text-cyan-300">politique de confidentialité</a>.
         </p>
       </div>
 

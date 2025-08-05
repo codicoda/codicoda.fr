@@ -484,7 +484,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Coco</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">60 €/mois*<br><span class="price-abo masked"></span></p>
                                     <p class="text-gray-400 text-sm mb-3">Une page web au contenu modifiable, pour avoir une présence <strong>en ligne</strong> rapidement.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -494,7 +494,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codi</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">90 €/mois*<br><span class="price-abo masked"></span></p>
                                     <p class="text-gray-400 text-sm mb-3">Un site vitrine <strong>facile à modifier</strong>. Gardez une autonomie sur le contenu de votre site.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -504,7 +504,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codico</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">140 €/mois*<br><span class="price-abo masked"></span></p>
                                     <p class="text-gray-400 text-sm mb-3">Un site vitrine complet et <strong>évolutif</strong>. Ajoutez vous-même ce que vous souhaitez.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -514,7 +514,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codicoda</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">200 €/mois*<br><span class="price-abo masked"></span></p>
                                     <p class="text-gray-400 text-sm mb-3">Une solution haut de gamme, sur mesure et <strong>sans limite</strong>. Toutes vos envies sur votre site.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                             </div>
@@ -526,7 +526,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Coco</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">600 €<br><span class="price-abo switchmonthly">+ 40 €/mois*</span></p>
                                     <p class="text-gray-400 text-sm mb-3">Une page web au contenu modifiable, pour avoir une présence <strong>en ligne</strong> rapidement.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -536,7 +536,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codi</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">900 €<br><span class="price-abo switchmonthly">+ 40 €/mois*</span></p>
                                     <p class="text-gray-400 text-sm mb-3">Un site vitrine <strong>facile à modifier</strong>. Gardez une autonomie sur le contenu de votre site.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -546,7 +546,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codico</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">1 400 €<br><span class="price-abo switchmonthly">+ 40 €/mois*</span></p>
                                     <p class="text-gray-400 text-sm mb-3">Un site vitrine complet et <strong>évolutif</strong>. Ajoutez vous-même ce que vous souhaitez.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                                 <div class="relative group">
@@ -556,7 +556,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     <h4 class="bold-name text-xl text-white mb-2">Codicoda</h4>
                                     <p class="text-cyan-400 font-semibold mb-2 firstprice">2 000 €<br><span class="price-abo switchmonthly">+ 40 €/mois*</span></p>
                                     <p class="text-gray-400 text-sm mb-3">Une solution haut de gamme, sur mesure et <strong>sans limite</strong>. Toutes vos envies sur votre site.</p>
-                                    <button onclick="window.location.href='/pages/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
+                                    <button onclick="window.location.href='/offres';" class="px-3 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-base font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300 transform group-hover:scale-105 group-active:scale-95"><span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Détails de l'offre</span></button>
                                 </div>
                                 </div>
                             </div>
@@ -664,10 +664,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <footer class="bg-gray-900/70 backdrop-blur-lg border-b border-cyan-500/30 z-50 transition-all duration-300">
                 <div class="wrapper mx-auto px-6 py-4 flex items-center justify-between">
                     <ul>
-                        <li class="inline-block mr-4"><a href="/pages/legal-notices">Mentions légales</a></li>
-                        <li class="inline-block mr-4"><a href="/pages/privacy-policy">Politique de confidentialité</a></li>
-                        <li class="inline-block mr-4"><a href="/pages/cgv">Conditions générales de vente</a></li>
-                        <li class="inline-block mr-4"><a href="/pages/cgu">Conditions générales d'utilisation</a></li>
+                        <li class="inline-block mr-4"><a href="/legal-notices">Mentions légales</a></li>
+                        <li class="inline-block mr-4"><a href="/privacy-policy">Politique de confidentialité</a></li>
+                        <li class="inline-block mr-4"><a href="/cgv">Conditions générales de vente</a></li>
+                        <li class="inline-block mr-4"><a href="/cgu">Conditions générales d'utilisation</a></li>
                     </ul>
             </footer>
         </body>
