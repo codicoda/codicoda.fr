@@ -68,6 +68,7 @@ curl_setopt($ch, CURLOPT_URL, "https://challenges.cloudflare.com/turnstile/v0/si
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query([
+    'secret' => $turnstile_secret_key,
     'response' => $token,
     'remoteip' => $_SERVER['REMOTE_ADDR']
 ]));
