@@ -3,7 +3,14 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $_SESSION['startTime'] = time();
 }
-    ?>
+
+$isLocal = in_array($_SERVER['SERVER_NAME'], ['localhost', '127.0.0.1', 'dev.codicoda.fr']);
+
+$turnstile_site_key = $isLocal
+    ? ('1x00000000000000000000AA')
+    : ('0x4AAAAAABafKuhf-vdXQkNh');
+?>
+
     <!DOCTYPE html>
     <html lang="fr">
         <head>
@@ -12,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <script src="/assets/js/index.js" defer></script>
             <script src="/assets/js/common.js" defer></script>
             <link rel="stylesheet" href="/assets/css/style.tailwind.min.css">
+            <script>window.TURNSTILE_KEY = "<?php echo htmlspecialchars($turnstile_site_key); ?>";</script>
             <script src="/assets/js/contact.js"></script>
             <link rel="icon" href="/fav.ico" type="image/x-icon">
             <link rel="preconnect" href="https://fonts.googleapis.com">

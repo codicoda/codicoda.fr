@@ -1,7 +1,17 @@
 <?php
 session_start();
-$secret = $_ENV('TURNSTILE_SECRET') ?? $_SERVER['TURNSTILE_SECRET'] ?? getenv('TURNSTILE_SECRET') ?? null;
-$to = $_ENV('CONTACT_EMAIL') ?? $_SERVER['CONTACT_EMAIL'] ?? getenv('CONTACT_EMAIL') ?? null;
+$isLocal = ($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_NAME'] === '127.0.0.1');
+
+$turnstile_site_key = $isLocal
+    ? ($_ENV['TURNSTILE_SECRET_KEY_DEV'] 
+        ?? $_SERVER['TURNSTILE_SECRET_KEY_DEV'] 
+        ?? getenv('TURNSTILE_SECRET_KEY_DEV') 
+        ?? null)
+    : ($_ENV['TURNSTILE_SECRET'] 
+        ?? $_SERVER['TURNSTILE_SECRET'] 
+        ?? getenv('TURNSTILE_SECRET') 
+        ?? null);
+$to = $_ENV['CONTACT_EMAIL'] ?? $_SERVER['CONTACT_EMAIL'] ?? getenv('CONTACT_EMAIL') ?? null;
 
 if (empty($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'], 'codicoda.fr') === false) {
     die("Accès non autorisé.");
