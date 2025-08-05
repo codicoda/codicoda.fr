@@ -97,7 +97,7 @@
 
       <div>
         <h3 class="text-xl text-cyan-400 font-semibold mb-2">14. Données personnelles</h3>
-        <p>Les données collectées sont utilisées uniquement dans le cadre de la relation commerciale. Voir la <a href="/pages/privacy-policy" class="underline text-cyan-300 hover:text-cyan-100">Politique de Confidentialité</a>.</p>
+        <p>Les données collectées sont utilisées uniquement dans le cadre de la relation commerciale. Voir la <a href="/privacy-policy" class="underline text-cyan-300 hover:text-cyan-100">Politique de Confidentialité</a>.</p>
       </div>
 
       <div class="text-sm text-gray-500 mt-8 text-center italic">Dernière mise à jour : 07/2025</div>
