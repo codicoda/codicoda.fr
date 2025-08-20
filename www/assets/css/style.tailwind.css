@@ -1862,7 +1862,6 @@ i.fa-file-code{font-weight: 100;}
 .main-timeline4 .description{font-size:14px;color:#dadada;margin:0 0 5px}
 .main-timeline4 .timeline:nth-child(2n){padding:0 100px 0 0}
 .main-timeline4 .timeline:nth-child(2n) .timeline-content:before,.main-timeline4 .timeline:nth-child(2n) .year,.main-timeline4 .timeline:nth-child(2n):before{left:auto;right:-10px}
-.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:24px}
 .main-timeline4 .timeline:nth-child(2n) .timeline-content:before{right:-92px}
 .main-timeline4 .timeline:nth-child(2n) .year{right:-120%}
 .main-timeline4 .timeline:nth-child(2){margin-top:44%}
@@ -1891,10 +1890,6 @@ i.fa-file-code{font-weight: 100;}
 
   .main-timeline4 .timeline:nth-child(2n){
     padding:0 0 0 30px
-  }
-
-  .main-timeline4 .timeline:nth-child(2n) .timeline-content {
-    padding: 24px;
   }
 
   .main-timeline4:before {
