@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 form.reset();
                 token = '';
                 turnstile.reset();
+                turnstileContainer.style.display = 'none';
             }
         })
         .catch(() => {
