@@ -86,7 +86,7 @@ $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8";
 $body = "\n$message";
-$confirm = "<body><div style='text-align: center; margin:1em;'><header><h1>Message bien envoyé !</h1></header><img src='/www/fav.ico' alt='logo'><p>Votre message a bien été envoyé, nous ferons de notre mieux pour y répondre dans les plus brefs délais.</p></div></body>";
+$confirm = "<body><div style='text-align: center; margin:1em;'><header><h1>Message bien envoyé !</h1></header><img src='https://codicoda.fr/fav.ico' alt='logo'><p>Votre message a bien été envoyé, nous ferons de notre mieux pour y répondre dans les plus brefs délais.</p></div></body>";
 $headersconfirm = "From: $to\r\n";
 $headersconfirm .= "Reply-To: $to\r\n";
 $headersconfirm .= "Content-Type: text/html; charset=utf-8";
