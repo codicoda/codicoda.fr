@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             messageResult.innerHTML = data;
 
-            if (data.includes('plus')) {
+            if (data.includes('succès')) {
                 form.reset();
                 token = '';
                 turnstile.reset('#turnstile-container');
@@ -68,17 +68,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    e.preventDefault();
 
-        if (!turnstileLoaded) {
-            turnstileContainer.style.display = 'block';
-            loadTurnstile().catch(() => {
-                messageResult.innerHTML = "Erreur de chargement du captcha.";
-            });
-        } else if (!token) {
-            messageResult.innerHTML = "Veuillez valider le captcha avant d'envoyer.";
-        } else {
-            submitForm();
-        }
-    });
+    if (!turnstileLoaded) {
+        turnstileContainer.style.display = 'block';
+        loadTurnstile().catch(() => {
+            messageResult.innerHTML = "Erreur de chargement du captcha.";
+        });
+    } else if (!token) {
+        // Si déjà chargé, mais captcha masqué → on le réaffiche
+        turnstileContainer.style.display = 'block';
+        messageResult.innerHTML = "Veuillez valider le captcha avant d'envoyer.";
+    } else {
+        submitForm();
+    }
+});
 });
