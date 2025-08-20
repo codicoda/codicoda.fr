@@ -12,7 +12,7 @@ $turnstile_secret_key = $isLocal
         ?? getenv('TURNSTILE_SECRET') 
         ?? null);
 $to = $_ENV['CONTACT_EMAIL'] ?? $_SERVER['CONTACT_EMAIL'] ?? getenv('CONTACT_EMAIL') ?? null;
-
+$noReply = $_ENV['NO_REPLY_EMAIL'] ?? $_SERVER['NO_REPLY_EMAIL'] ?? getenv('NO_REPLY_EMAIL') ?? null;
 if (empty($_SERVER['HTTP_REFERER']) || strpos($_SERVER['HTTP_REFERER'], 'codicoda.fr') === false) {
     die("Accès non autorisé.");
 }
@@ -30,7 +30,11 @@ function sanitize_message($data) {
     return $data;
 }
 
-$email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) : '';
+$email = isset($_POST['email']) ? sanitize_mail_input($_POST['email']) : '';
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "<p class='message'>Email invalide.</p>";
+    exit;
+}
 $subject = isset($_POST['objet']) ? sanitize_mail_input($_POST['objet']) : '';
 $message = isset($_POST['message']) ? sanitize_message($_POST['message']) : '';
 $name = isset($_POST['name']) ? sanitize_message($_POST['name']) : '';
@@ -82,14 +86,16 @@ if (!$result['success']) {
 }
 
 // Envoi de l'email
-$headers = "From: $email\r\n";
+$headers = "From: $noReply\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-Type: text/plain; charset=utf-8";
 $body = "\n$message";
 $confirm = "<body><div style='text-align: center; margin:1em;'><header><h1>Message bien envoyé !</h1></header><img src='https://codicoda.fr/fav.ico' alt='logo'><p>Votre message a bien été envoyé, nous ferons de notre mieux pour y répondre dans les plus brefs délais.</p></div></body>";
-$headersconfirm = "From: $to\r\n";
-$headersconfirm .= "Reply-To: $to\r\n";
-$headersconfirm .= "Content-Type: text/html; charset=utf-8";
+$headersconfirm = "MIME-Version: 1.0\r\n";
+$headersconfirm .= "From: $noReply\r\n";
+$headersconfirm .= "Reply-To: $noReply\r\n";
+$headersconfirm .= "Content-Type: text/html; charset=utf-8\r\n";
+
 
 if (mail($to, $subject, $body, $headers)) {
     $_SESSION['startTime'] = time(); 
