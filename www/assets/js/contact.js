@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const formData = new FormData(form);
         formData.append('cf-turnstile-response', token);
 
-        fetch('/send', {
+        fetch('/incoming/send', {
             method: 'POST',
             body: formData
         })
