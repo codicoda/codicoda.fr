@@ -984,7 +984,7 @@ filter:blur(10px);
 }
 
 #mobile-menu.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 #mobile-menu-button {
@@ -1005,6 +1005,13 @@ filter:blur(10px);
 #mobile-menu-button.active #line3 {
   transform: rotate(-45deg) translateX(8px);
   transform-origin: center;
+}
+
+#mobile-menu a.mobile-nav-link {
+    padding: .75em 0 .75em 1em;
+    font-size: 1.2em;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #line1, #line2, #line3 {
