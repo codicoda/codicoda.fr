@@ -1011,6 +1011,7 @@ filter:blur(10px);
     padding: .75em 0 .75em 1em;
     font-size: 1.2em;
     margin-top: .6em;
+    font-weight: bold;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.4);
 }
