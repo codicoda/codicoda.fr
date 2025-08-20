@@ -125,7 +125,7 @@ $turnstile_site_key = $isLocal
                                 <a href="#tarifs" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Tarifs</a>
                                 <a href="#portfolio" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Portfolio</a>
                                 <a href="#contact" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Contact</a>
-                                <div class="px-4 pt-2 mt-12">
+                                <div class="px-4 pt-2 mt-8">
                                     <a href="https://calendly.com/codicoda/rendez-vous" target="blank" style="text-decoration: none;"><button class="contact-btn w-full px-4 py-3 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
                                         <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Prenons rendez-vous !</span>
                                     </button></a>
