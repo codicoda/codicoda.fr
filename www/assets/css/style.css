@@ -984,7 +984,7 @@ filter:blur(10px);
 }
 
 #mobile-menu.open {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 #mobile-menu-button {
@@ -1012,6 +1012,10 @@ filter:blur(10px);
     font-size: 1.2em;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-btn span {
+    font-size: 1.3em;
 }
 
 #line1, #line2, #line3 {
