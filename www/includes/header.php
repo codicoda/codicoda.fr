@@ -105,14 +105,14 @@
             
                         <div id="mobile-menu" class="lg:hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
                             <div class="pt-2 pb-4 space-y-1">
-                                <a href="/#about" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">A propos</a>
-                                <a href="/#services" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Services</a>
-                                <a href="/#timeline" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Étapes</a>
-                                <a href="/#tarifs" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Tarifs</a>
-                                <a href="/#portfolio" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Portfolio</a>
-                                <a href="/#contact" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Contact</a>
-                                <div class="px-4 pt-2">
-                                    <a href="https://calendly.com/codicoda/rendez-vous" target="blank" style="text-decoration: none;"><button class="contact-btn w-full px-4 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
+                                <a href="/#about" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">A propos</a>
+                                <a href="/#services" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Services</a>
+                                <a href="/#timeline" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Étapes</a>
+                                <a href="/#tarifs" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Tarifs</a>
+                                <a href="/#portfolio" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Portfolio</a>
+                                <a href="/#contact" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Contact</a>
+                                <div class="px-4 pt-2 mt-8">
+                                    <a href="https://calendly.com/codicoda/rendez-vous" target="blank" style="text-decoration: none;"><button class="contact-btn w-full px-4 py-3 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
                                         <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Prenons rendez-vous !</span>
                                     </button></a>
                                 </div>
