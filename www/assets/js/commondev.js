@@ -38,12 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const coutsname = document.getElementById('coutsname');
   const textOffres = document.getElementById('texteoffres');
 
-
+if (btnMensuel) {
     btnMensuel.addEventListener("click", () => {
     toggler.checked = true; 
     label.classList.add('glow-green');
     btnMensuel.classList.add("active-tab");
     btnLoc.classList.remove("active-tab");
+    
     if (tableauComptant) {
       tableauComptant.classList.add("hide");
       tableauMensuel.classList.remove("hide");
@@ -70,8 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
     offersTitle.className = "text-cyan-400";
     engag.classList.remove("hide");
     }
-  });
-
+  })};
+if (btnLoc) {
   btnLoc.addEventListener("click", () => { 
     btnMensuel.classList.remove("active-tab");
     btnLoc.classList.add("active-tab");
@@ -102,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     switchMonthlyElements.forEach(el => el.classList.remove('masked'));
     engag.classList.add("hide");
   }
-  });
+  })};
 
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', () => {
