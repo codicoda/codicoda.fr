@@ -329,7 +329,7 @@ $turnstile_site_key = $isLocal
                                     <div class="timeline-content relative bg-gray-900/70 backdrop-blur-lg border border-indigo-500/20 p-6 rounded-xl shadow-xl group-hover:border-indigo-500/40 transition-all duration-300">
                                         <span class="year"><i class ="fas fa-magnifying-glass text-cyan-400 text-2xl"></i> </span>
                                         <div class="inner-content">
-                                            <h3 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Analyse des besoins</h3>
+                                            <h3 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Les besoins</h3>
                                             <p class="description">
                                             Après notre premier échange, on entre dans le détail : vos objectifs, vos contraintes, vos contenus, vos préférences graphiques ou techniques. Cette phase permet de poser les bases solides du projet et d'identifier les solutions adaptées.
                                             </p>
