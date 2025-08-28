@@ -80,8 +80,8 @@ strong {
 }
 
 a:hover {
-    color: #0056b3;
-    text-decoration: underline
+    color: var(--secondary);
+    transition: 0.3s ease;
 }
 
 img {
@@ -1643,10 +1643,6 @@ a:focus, button:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #07b6d4, #6265f2);
-}
-
-a:hover {
-  color: unset;
 }
 
 .marquee {
