@@ -123,7 +123,7 @@ $ogImage = $ogImage ?? ($scheme . '://' . $host . '/fav.ico');
                                 <a href="/#contact" class="nav-link text-gray-300 hover:text-cyan-400 py-2 rounded-md transition-colors duration-200">Contact</a>
                                 <div class="relative ml-4 group">
                                     <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-600/50 to-purple-600/50 rounded-lg blur opacity-75 group-hover:opacity-100 transition-all duration-500"></div>
-                                    <a href="https://calendly.com/codicoda/rendez-vous" target="blank" style="text-decoration: none; white-space:nowrap"><button class="contact-btn px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300">
+                                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codicoda/rendez-vous'});return false;"><button class="contact-btn px-4 py-2 bg-gradient-to-r from-indigo-900/90 to-purple-900/90 rounded-lg text-white text-sm font-medium relative z-10 flex items-center justify-center gap-2 group-hover:from-indigo-800/90 group-hover:to-purple-800/90 transition-all duration-300">
                                         <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Prenons rendez-vous !</span>
                                     </button></a>
                                 </div>
@@ -149,7 +149,7 @@ $ogImage = $ogImage ?? ($scheme . '://' . $host . '/fav.ico');
                                 <a href="/#portfolio" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Portfolio</a>
                                 <a href="/#contact" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 rounded-md transition-colors duration-200">Contact</a>
                                 <div class="px-4 pt-2 mt-8">
-                                    <a href="https://calendly.com/codicoda/rendez-vous" target="blank" style="text-decoration: none;"><button class="contact-btn w-full px-4 py-3 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
+                                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/codicoda/rendez-vous'});return false;"><button class="contact-btn w-full px-4 py-3 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
                                         <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Prenons rendez-vous !</span>
                                     </button></a>
                                 </div>
