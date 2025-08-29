@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Politique de confidentialité | Codicoda";
+$desc  = "Découvrez comment Codicoda collecte, utilise et protège vos données personnelles conformément au RGPD.";
+include '../includes/header.php'; ?>
 <section class="legal min-h-screen flex items-center justify-center relative py-20 bg-black text-white font-['Space_Grotesk']">
   <div class="wrapper mx-auto px-6 max-w-4xl">
     <div class="text-center mb-12">
