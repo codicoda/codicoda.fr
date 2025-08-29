@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Conditions générales de vente | Codicoda";
+$desc  = "Consultez les conditions générales de vente de Codicoda concernant la création, maintenance et hébergement de sites internet professionnels.";
+include '../includes/header.php'; ?>
 <section class="legal min-h-screen flex items-center justify-center relative py-20 bg-black text-white font-['Space_Grotesk']">
   <div class="wrapper mx-auto px-6 max-w-4xl">
     <div class="text-center mb-12">

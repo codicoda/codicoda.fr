@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Offres de création de site internet | Codicoda";
+$desc  = "Choisissez l’offre adaptée à vos besoins : site vitrine, e-commerce, maintenance et hébergement inclus. Codicoda conçoit des solutions évolutives.";
+include '../includes/header.php'; ?>
 <section class="offres" style="padding-top:calc(var(--vh) * 20")>
     <div class="wrapper mx-auto px-6" style="max-width: 95vw;">
                             <div class="mx-auto">

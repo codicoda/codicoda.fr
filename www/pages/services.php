@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Création et maintenance de sites web | Codicoda";
+$desc  = "Services complets en développement web : création, refonte, maintenance, déploiement et SEO. Codicoda accompagne freelances, PME et indépendants.";
+include '../includes/header.php'; ?>
 <section id="services" class="min-h-screen flex items-center relative py-20" style="padding-top:calc(var(--vh) * 20);">
                         <div class="wrapper mx-auto px-6">
                             <div class="max-w-5xl mx-auto">

@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /pages/site-suspendu
 
 Sitemap: https://codicoda.fr/sitemap.xml

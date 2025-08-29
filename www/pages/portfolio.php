@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Portfolio développeur web freelance | Codicoda";
+$desc  = "Découvrez des exemples de sites internet réalisés par Codicoda : projets sur mesure pour photographes, artisans, indépendants et PME.";
+include '../includes/header.php'; ?>
 <section id="portfolio" class="min-h-screen flex items-center relative py-20" style="padding-top:calc(var(--vh) * 20);">
                         <div class="wrapper mx-auto px-6">
                             <div class="max-w-5xl mx-auto">

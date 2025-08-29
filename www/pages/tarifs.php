@@ -1,4 +1,7 @@
-<?php include '../includes/header.php'; ?>
+<?php 
+$title = "Tarifs site internet professionnel | Codicoda";
+$desc  = "Découvrez des packs clairs pour la création et la maintenance de sites internet professionnels. Solutions flexibles adaptées à tous budgets.";
+include '../includes/header.php'; ?>
 <section id="tarifs" class="min-h-screen flex items-center relative py-20" style="padding-top:calc(var(--vh) * 20);">
                         <div class="wrapper mx-auto px-6">
                             <div class="max-w-5xl mx-auto">

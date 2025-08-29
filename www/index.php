@@ -4,38 +4,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $_SESSION['startTime'] = time();
 }
 
-$isLocal = in_array($_SERVER['SERVER_NAME'], ['localhost', '127.0.0.1', 'dev.codicoda.fr']);
+$isLocal = in_array($_SERVER['SERVER_NAME'] ?? '', ['localhost', '127.0.0.1', 'dev.codicoda.fr'], true);
+$turnstile_site_key = $isLocal ? '1x00000000000000000000AA' : '0x4AAAAAABafKuhf-vdXQkNh';
 
-$turnstile_site_key = $isLocal
-    ? ('1x00000000000000000000AA')
-    : ('0x4AAAAAABafKuhf-vdXQkNh');
+$title = "Développeur web freelance | Création & refonte de sites internet | Codicoda";
+$desc  = "Développeur web freelance spécialisé dans la création et la refonte de sites internet professionnels. Maintenance, SEO et hébergement inclus. Codicoda accompagne artisans, indépendants et PME.";
+$ogImage = "https://codicoda.fr/fav.ico";
+
+$CFkey = htmlspecialchars($turnstile_site_key, ENT_QUOTES, 'UTF-8');
+$head_extra = <<<HTML
+  <link rel="preload" href="/assets/js/index.js" as="script">
+  <script>window.TURNSTILE_KEY = "{$CFkey}";</script>
+  <script src="/assets/js/index.js" defer></script>
+  <script src="/assets/js/contact.js" defer></script>
+HTML;
+
+
+include __DIR__ . '/includes/header.php';
 ?>
-
-    <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <link rel="preload" href="/assets/js/common.js" as="script">
-            <link rel="preload" href="/assets/js/index.js" as="script">
-            <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
-            <script src="https://kit.fontawesome.com/d086639e0f.js" crossorigin="anonymous" defer></script>
-            <script src="/assets/js/index.js" defer></script>
-            <script src="/assets/js/common.js" defer></script>
-            <link rel="stylesheet" href="/assets/css/style.tailwind.min.css">
-            <script>window.TURNSTILE_KEY = "<?php echo htmlspecialchars($turnstile_site_key); ?>";</script>
-            <script src="/assets/js/contact.js"></script>
-            <link rel="icon" href="/fav.ico" type="image/x-icon">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="/assets/css/style.min.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-            <title>Création de site internet professionnel | Refonte & maintenance web sur mesure | Codicoda</title>
-            <meta name="description" content="Codicoda conçoit des sites internet professionnels sur mesure : création, refonte, maintenance, SEO, hébergement et déploiement. Un accompagnement complet, de A à Z.">
-            <meta name="google-site-verification" content="9g5ui2VcM5hBHnIR6fXZsjKghXmcUkVOSa83h1PB0RQ"/>
-            <meta property="og:description" content="Développement Web: Codicoda vous accompagne dans la création, la refonte et la maintenance de sites web modernes et performants. De l'hébergement au déploiement, vos projets sont gérés de A à Z.">
-            <meta property="og:image" content="https://codicoda.fr/fav.ico">
-        </head>
-        <body>        
+        
             <div class="bg-black text-white font-['Space_Grotesk']">
                 <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
                     <div class="absolute top-20 left-10 w-96 h-96 bg-indigo-900/10 rounded-full blur-3xl"></div>
