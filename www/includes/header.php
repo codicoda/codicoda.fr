@@ -50,6 +50,8 @@ $ogImage = $ogImage ?? ($scheme . '://' . $host . '/fav.ico');
 
   <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
   <script src="https://kit.fontawesome.com/d086639e0f.js" crossorigin="anonymous" defer></script>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <?php
   if (!empty($head_extra)) { echo $head_extra; }
