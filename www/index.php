@@ -133,7 +133,7 @@ include __DIR__ . '/includes/header.php';
                                 </div>
                                 <div>
                                 <h1 id="subtitle" class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-8">
-                                    Création, refonte et maintenance de sites web professionnels sur mesure :
+                                    Développement, refonte et maintenance de sites web professionnels sur mesure :
                                     <span id="write"></span>
                                     <span class="blink">|</span>
                                 </h1></div>
